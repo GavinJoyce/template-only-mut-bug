@@ -1,0 +1,10 @@
+<h3>Template Only Component</h3>
+
+{{#if showImage}}
+  [Here's your something]
+
+  <button onclick={{action (mut showSomething) false}}>Hide</button>
+{{else}}
+  <button onclick={{action (mut showSomething) true}}>Show</button>
+{{/if}}
+

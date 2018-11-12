@@ -1,0 +1,10 @@
+<h3>Normal Component</h3>
+
+{{#if showSomething}}
+  [Here's your something]
+
+  <button onclick={{action (mut showSomething) false}}>Hide</button>
+{{else}}
+  <button onclick={{action (mut showSomething) true}}>Show</button>
+{{/if}}
+
