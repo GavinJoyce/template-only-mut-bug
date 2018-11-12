@@ -1,11 +1,11 @@
 <h3>Template Only Component</h3>
 
-{{#let false as |showSomething|}}
-  {{#if showSomething}}
+{{#let (data-bag) as |data|}}
+  {{#if data.showSomething}}
     [Here's your something]
 
-    <button onclick={{action (mut showSomething) false}}>Hide</button>
+    <button onclick={{action (mut data.showSomething) false}}>Hide</button>
   {{else}}
-    <button onclick={{action (mut showSomething) true}}>Show</button>
+    <button onclick={{action (mut data.showSomething) true}}>Show</button>
   {{/if}}
 {{/let}}
