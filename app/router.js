@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('normal');
   this.route('template-only');
+  this.route('template-only-with-let');
 });
 
 export default Router;
