@@ -1,7 +1,7 @@
 <h3>Template Only Component</h3>
 
-{{#let false as |showImage|}}
-  {{#if showImage}}
+{{#let false as |showSomething|}}
+  {{#if showSomething}}
     [Here's your something]
 
     <button onclick={{action (mut showSomething) false}}>Hide</button>
